@@ -15,13 +15,13 @@ void setup()
 void loop()
 {
 
-digitalWrite(4, LOW);
+digitalWrite(4, LOW); // Desactivar GND (Liberar torniquete)
 delay(1000);
-digitalWrite(4, HIGH);
+digitalWrite(4, HIGH); //Activar GND
 delay(500);
-digitalWrite(3, LOW);
+digitalWrite(3, LOW); // Activar 24Vdc a torniquete para cierre
 delay(1000);
-digitalWrite(3, HIGH);
+digitalWrite(3, HIGH); //Desactivar 24 Vdc y mantener 12 Vdc
 delay(2000);
 	
 }

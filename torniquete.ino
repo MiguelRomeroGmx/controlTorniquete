@@ -37,6 +37,18 @@ salir = digitalRead(8);
 		delay(2000);
 	}
 
+	if(salir == 1){
+
+	    digitalWrite(6, LOW); // Desactivar GND (Liberar torniquete)
+		delay(1000);
+		digitalWrite(6, HIGH); //Activar GND
+		delay(500);
+		digitalWrite(5, LOW); // Activar 24Vdc a torniquete para cierre
+		delay(1000);
+		digitalWrite(5, HIGH); //Desactivar 24 Vdc y mantener 12 Vdc
+		delay(2000);
 
 	
+	}
+
 }

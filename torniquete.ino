@@ -25,8 +25,8 @@ void loop()
 entrar = digitalRead(7);
 salir = digitalRead(8);
 
-	if(entar == 1){
-		
+	if(entrar == 1){
+
 	    digitalWrite(4, LOW); // Desactivar GND (Liberar torniquete)
 		delay(1000);
 		digitalWrite(4, HIGH); //Activar GND

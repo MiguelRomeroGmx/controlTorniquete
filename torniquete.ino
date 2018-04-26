@@ -6,13 +6,13 @@ int salir;
 
 void setup()
 {
-	pinMode(3, OUTPUT); // control 24 Vdc - 12Vdc
-	pinMode(4, OUTPUT); // control GND
-	pinMode(5, OUTPUT);
-	pinMode(6, OUTPUT);
-	pinMode(7, INPUT);
-	pinMode(8, INPUT);
-	digitalWrite(3, HIGH);
+	pinMode(3, OUTPUT); // control 24 Vdc - 12Vdc entrar
+	pinMode(4, OUTPUT); // control GND entrar
+	pinMode(5, OUTPUT); // control 24 Vdc - 12 Vdc salir
+	pinMode(6, OUTPUT); // control GND salir
+	pinMode(7, INPUT); // Entrada boton / Controladora Entrar
+	pinMode(8, INPUT); // Entrada boton / Controladora Salir
+	digitalWrite(3, HIGH); // Todas las salidas en Alto
 	digitalWrite(4, HIGH);
 	digitalWrite(5, HIGH);
 	digitalWrite(6, HIGH);
@@ -22,7 +22,7 @@ void setup()
 void loop()
 {
 
-entrar = digitalRead(7);
+entrar = digitalRead(7); // Leyendo entradas
 salir = digitalRead(8);
 
 	if(entrar == 1){

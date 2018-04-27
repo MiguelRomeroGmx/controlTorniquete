@@ -17,6 +17,7 @@ void setup()
 	digitalWrite(5, HIGH);
 	digitalWrite(6, HIGH);
 	delay(500);
+	//Activacion de torniquete
 	digitalWrite(3, LOW); // Activar 24Vdc a torniquete para cierre
 	delay(1000);
 	digitalWrite(3, HIGH); //Desactivar 24 Vdc y mantener 12 Vdc
